@@ -12,7 +12,7 @@ function fetchWeather() {
 
 }
 
-var html_data = "";
+
 
 function displayWeather(data) {
     let City = data.name;
@@ -21,7 +21,8 @@ function displayWeather(data) {
     let cityMaxTemp = data.main.temp_max;
     let cityWeather = data.weather[0].main;
     let cityWind = data.wind.speed;
-    let cityTimezone = data.timezone;
+    let cityTimezone = data.timezone
+    let html_data = "";
 
     html_data = `<div class="d-flex">
     <h6 class="flex-grow-1">${City}</h6>
