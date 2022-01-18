@@ -23,7 +23,7 @@ function displayWeather(data) {
     let cityWind = data.wind.speed;
     let cityTimezone = data.timezone;
 
-    html_data += `<div class="d-flex">
+    html_data = `<div class="d-flex">
     <h6 class="flex-grow-1">${City}</h6>
     <h6>${cityTimezone}</h6>
 </div>
